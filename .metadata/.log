@@ -1,0 +1,257 @@
+!SESSION 2021-06-22 10:21:26.094 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=1.8.0_291
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.linuxtools.changelog.core 4 0 2021-06-22 10:21:28.824
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.linuxtools.changelog.core [509]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.linuxtools.profiling.launch 4 0 2021-06-22 10:21:28.843
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.linuxtools.profiling.launch [510]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.linuxtools.rpm.core 4 0 2021-06-22 10:21:28.845
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.linuxtools.rpm.core [511]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.linuxtools.tools.launch.core; bundle-version="1.1.0"
+    -> Bundle-SymbolicName: org.eclipse.linuxtools.tools.launch.core; bundle-version="3.3.0.202009091443"; singleton:="true"
+       org.eclipse.linuxtools.tools.launch.core [518]
+         Unresolved requirement: Require-Bundle: org.eclipse.linuxtools.profiling.launch; bundle-version="0.10.0"
+           -> Bundle-SymbolicName: org.eclipse.linuxtools.profiling.launch; bundle-version="3.3.0.202009091443"; singleton:="true"
+              org.eclipse.linuxtools.profiling.launch [510]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Import-Package: org.eclipse.linuxtools.profiling.launch
+    -> Export-Package: org.eclipse.linuxtools.profiling.launch; bundle-symbolic-name="org.eclipse.linuxtools.profiling.launch"; bundle-version="3.3.0.202009091443"; version="0.0.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.linuxtools.rpm.createrepo 4 0 2021-06-22 10:21:28.852
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.linuxtools.rpm.createrepo [512]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.linuxtools.rpm.ui.editor
+    -> Bundle-SymbolicName: org.eclipse.linuxtools.rpm.ui.editor; bundle-version="4.0.0.202009091443"; singleton:="true"
+       org.eclipse.linuxtools.rpm.ui.editor [515]
+         Unresolved requirement: Require-Bundle: org.eclipse.linuxtools.changelog.core
+           -> Bundle-SymbolicName: org.eclipse.linuxtools.changelog.core; bundle-version="3.0.0.202009091443"; singleton:="true"
+              org.eclipse.linuxtools.changelog.core [509]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: org.eclipse.linuxtools.rpm.core
+           -> Bundle-SymbolicName: org.eclipse.linuxtools.rpm.core; bundle-version="3.1.0.202009091443"; singleton:="true"
+              org.eclipse.linuxtools.rpm.core [511]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.linuxtools.tools.launch.core; bundle-version="1.1.0"
+                  -> Bundle-SymbolicName: org.eclipse.linuxtools.tools.launch.core; bundle-version="3.3.0.202009091443"; singleton:="true"
+                     org.eclipse.linuxtools.tools.launch.core [518]
+                       Unresolved requirement: Require-Bundle: org.eclipse.linuxtools.profiling.launch; bundle-version="0.10.0"
+                         -> Bundle-SymbolicName: org.eclipse.linuxtools.profiling.launch; bundle-version="3.3.0.202009091443"; singleton:="true"
+                            org.eclipse.linuxtools.profiling.launch [510]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Import-Package: org.eclipse.linuxtools.profiling.launch
+                  -> Export-Package: org.eclipse.linuxtools.profiling.launch; bundle-symbolic-name="org.eclipse.linuxtools.profiling.launch"; bundle-version="3.3.0.202009091443"; version="0.0.0"
+  Unresolved requirement: Require-Bundle: org.eclipse.linuxtools.rpm.core
+    -> Bundle-SymbolicName: org.eclipse.linuxtools.rpm.core; bundle-version="3.1.0.202009091443"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.linuxtools.rpm.rpmlint 4 0 2021-06-22 10:21:28.853
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.linuxtools.rpm.rpmlint [513]
+  Unresolved requirement: Require-Bundle: org.eclipse.linuxtools.rpm.core
+    -> Bundle-SymbolicName: org.eclipse.linuxtools.rpm.core; bundle-version="3.1.0.202009091443"; singleton:="true"
+       org.eclipse.linuxtools.rpm.core [511]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: org.eclipse.linuxtools.tools.launch.core; bundle-version="1.1.0"
+           -> Bundle-SymbolicName: org.eclipse.linuxtools.tools.launch.core; bundle-version="3.3.0.202009091443"; singleton:="true"
+              org.eclipse.linuxtools.tools.launch.core [518]
+                Unresolved requirement: Require-Bundle: org.eclipse.linuxtools.profiling.launch; bundle-version="0.10.0"
+                  -> Bundle-SymbolicName: org.eclipse.linuxtools.profiling.launch; bundle-version="3.3.0.202009091443"; singleton:="true"
+                     org.eclipse.linuxtools.profiling.launch [510]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Import-Package: org.eclipse.linuxtools.profiling.launch
+           -> Export-Package: org.eclipse.linuxtools.profiling.launch; bundle-symbolic-name="org.eclipse.linuxtools.profiling.launch"; bundle-version="3.3.0.202009091443"; version="0.0.0"
+  Unresolved requirement: Require-Bundle: org.eclipse.linuxtools.rpm.ui.editor
+    -> Bundle-SymbolicName: org.eclipse.linuxtools.rpm.ui.editor; bundle-version="4.0.0.202009091443"; singleton:="true"
+       org.eclipse.linuxtools.rpm.ui.editor [515]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: org.eclipse.linuxtools.changelog.core
+           -> Bundle-SymbolicName: org.eclipse.linuxtools.changelog.core; bundle-version="3.0.0.202009091443"; singleton:="true"
+              org.eclipse.linuxtools.changelog.core [509]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: org.eclipse.linuxtools.rpm.core
+           -> Bundle-SymbolicName: org.eclipse.linuxtools.rpm.core; bundle-version="3.1.0.202009091443"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.linuxtools.rpm.ui 4 0 2021-06-22 10:21:28.855
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.linuxtools.rpm.ui [514]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.linuxtools.rpm.core
+    -> Bundle-SymbolicName: org.eclipse.linuxtools.rpm.core; bundle-version="3.1.0.202009091443"; singleton:="true"
+       org.eclipse.linuxtools.rpm.core [511]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: org.eclipse.linuxtools.tools.launch.core; bundle-version="1.1.0"
+           -> Bundle-SymbolicName: org.eclipse.linuxtools.tools.launch.core; bundle-version="3.3.0.202009091443"; singleton:="true"
+              org.eclipse.linuxtools.tools.launch.core [518]
+                Unresolved requirement: Require-Bundle: org.eclipse.linuxtools.profiling.launch; bundle-version="0.10.0"
+                  -> Bundle-SymbolicName: org.eclipse.linuxtools.profiling.launch; bundle-version="3.3.0.202009091443"; singleton:="true"
+                     org.eclipse.linuxtools.profiling.launch [510]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Import-Package: org.eclipse.linuxtools.profiling.launch
+           -> Export-Package: org.eclipse.linuxtools.profiling.launch; bundle-symbolic-name="org.eclipse.linuxtools.profiling.launch"; bundle-version="3.3.0.202009091443"; version="0.0.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.linuxtools.rpm.ui.editor 4 0 2021-06-22 10:21:28.856
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.linuxtools.rpm.ui.editor [515]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.linuxtools.changelog.core
+    -> Bundle-SymbolicName: org.eclipse.linuxtools.changelog.core; bundle-version="3.0.0.202009091443"; singleton:="true"
+       org.eclipse.linuxtools.changelog.core [509]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.linuxtools.rpm.core
+    -> Bundle-SymbolicName: org.eclipse.linuxtools.rpm.core; bundle-version="3.1.0.202009091443"; singleton:="true"
+       org.eclipse.linuxtools.rpm.core [511]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: org.eclipse.linuxtools.tools.launch.core; bundle-version="1.1.0"
+           -> Bundle-SymbolicName: org.eclipse.linuxtools.tools.launch.core; bundle-version="3.3.0.202009091443"; singleton:="true"
+              org.eclipse.linuxtools.tools.launch.core [518]
+                Unresolved requirement: Require-Bundle: org.eclipse.linuxtools.profiling.launch; bundle-version="0.10.0"
+                  -> Bundle-SymbolicName: org.eclipse.linuxtools.profiling.launch; bundle-version="3.3.0.202009091443"; singleton:="true"
+                     org.eclipse.linuxtools.profiling.launch [510]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Import-Package: org.eclipse.linuxtools.profiling.launch
+           -> Export-Package: org.eclipse.linuxtools.profiling.launch; bundle-symbolic-name="org.eclipse.linuxtools.profiling.launch"; bundle-version="3.3.0.202009091443"; version="0.0.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.linuxtools.rpmstubby 4 0 2021-06-22 10:21:28.858
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.linuxtools.rpmstubby [517]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.linuxtools.tools.launch.core 4 0 2021-06-22 10:21:28.859
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.linuxtools.tools.launch.core [518]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.linuxtools.profiling.launch; bundle-version="0.10.0"
+    -> Bundle-SymbolicName: org.eclipse.linuxtools.profiling.launch; bundle-version="3.3.0.202009091443"; singleton:="true"
+       org.eclipse.linuxtools.profiling.launch [510]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.egit.ui 2 0 2021-06-22 10:22:39.317
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\navprasa'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 2 2021-06-22 10:24:03.425
+!MESSAGE Invalid property category path: org.eclipse.cdt.managedbuilder.ui.properties.Page_head_build (bundle: org.eclipse.cdt.ui, propertyPage: org.eclipse.cdt.managedbuilder.ui.properties.BuildLogPreferencePage)
